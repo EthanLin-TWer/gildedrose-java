@@ -71,13 +71,15 @@ public class Item {
                     }
                 }
             }
-        } else {
-            if (quality > 0) {
-                if (!isSulfuras()) {
-                    quality = quality - 1;
-                }
+            return;
+        }
+
+        if (quality > 0) {
+            if (!isSulfuras()) {
+                quality = quality - 1;
             }
         }
+
     }
 
     protected boolean isSulfuras() {
