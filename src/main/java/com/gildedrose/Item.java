@@ -21,22 +21,25 @@ public class Item {
     void passOneDay() {
         updateQuality();
         updateSellIn();
-
         if (isExpired()) {
-            if (!isAgedBrie()) {
-                if (!isBackstagePass()) {
-                    if (quality > 0) {
-                        if (!isSulfuras()) {
-                            quality = quality - 1;
-                        }
+            updateQualityAfterExpiration();
+        }
+    }
+
+    private void updateQualityAfterExpiration() {
+        if (!isAgedBrie()) {
+            if (!isBackstagePass()) {
+                if (quality > 0) {
+                    if (!isSulfuras()) {
+                        quality = quality - 1;
                     }
-                } else {
-                    quality = 0;
                 }
             } else {
-                if (quality < 50) {
-                    quality = quality + 1;
-                }
+                quality = 0;
+            }
+        } else {
+            if (quality < 50) {
+                quality = quality + 1;
             }
         }
     }
