@@ -8,8 +8,7 @@ class GildedRose {
     }
 
     public void updateQuality() {
-        for (int i = 0; i < items.length; i++) {
-            final Item item = items[i];
+        for (Item item : items) {
             something(item);
         }
     }
