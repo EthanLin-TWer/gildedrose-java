@@ -49,7 +49,7 @@ public class Item {
             if (!isAgedBrie()) {
                 if (!isBackstagePass()) {
                     if (quality > 0) {
-                        if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+                        if (!isSulfuras()) {
                             quality = quality - 1;
                         }
                     }
