@@ -1,6 +1,7 @@
 package com.gildedrose;
 
 import com.gildedrose.items.AgedBrie;
+import com.gildedrose.items.BackstagePass;
 import com.gildedrose.items.Sulfuras;
 
 import java.io.ByteArrayOutputStream;
@@ -23,10 +24,10 @@ public class TextTestFixture {
                 new Item("Elixir of the Mongoose", 5, 7), //
                 new Sulfuras(0, 80),
                 new Sulfuras(-1, 80),
-                Item.createBackstagePass(15, 20),
-                Item.createBackstagePass(10, 49),
-                Item.createBackstagePass(5, 49),
-                Item.createBackstagePass(1, 20),
+                new BackstagePass(15, 20),
+                new BackstagePass(10, 49),
+                new BackstagePass(5, 49),
+                new BackstagePass(1, 20),
                 // this conjured item does not work properly yet
                 new Item("Conjured Mana Cake", 3, 6) };
 

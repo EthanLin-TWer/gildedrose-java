@@ -18,10 +18,6 @@ public class Item {
         this.quality = quality;
     }
 
-    static Item createBackstagePass(int sellIn, int quality) {
-        return new BackstagePass(sellIn, quality);
-    }
-
     void updateQuality() {
         if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {
