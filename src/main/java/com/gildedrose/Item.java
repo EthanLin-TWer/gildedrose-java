@@ -14,6 +14,10 @@ public class Item {
         this.quality = quality;
     }
 
+    static Item createAgedBrie(int sellIn, int quality) {
+        return new Item("Aged Brie", sellIn, quality);
+    }
+
     void updateQuality() {
         if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {

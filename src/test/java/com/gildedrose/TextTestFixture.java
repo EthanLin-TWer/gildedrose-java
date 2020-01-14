@@ -18,7 +18,7 @@ public class TextTestFixture {
         final int quality = 0;
         Item[] items = new Item[] {
                 new Item("+5 Dexterity Vest", 10, 20), //
-                createAgedBrie(sellIn, quality),
+                Item.createAgedBrie(sellIn, quality),
                 new Item("Elixir of the Mongoose", 5, 7), //
                 new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
                 new Item("Sulfuras, Hand of Ragnaros", -1, 80),
@@ -42,10 +42,6 @@ public class TextTestFixture {
         }
 
         return outputStream.toString();
-    }
-
-    private static Item createAgedBrie(int sellIn, int quality) {
-        return new Item("Aged Brie", sellIn, quality);
     }
 
 }
