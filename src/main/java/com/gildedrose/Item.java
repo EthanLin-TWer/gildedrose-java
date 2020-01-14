@@ -39,12 +39,10 @@ public class Item {
             return;
         }
 
-        if (quality > 0) {
-            if (!isSulfuras()) {
-                quality = quality - 1;
-            }
+        if (quality <= 0 || isSulfuras()) {
+            return;
         }
-
+        quality = quality - 1;
     }
 
     private boolean isExpired() {
