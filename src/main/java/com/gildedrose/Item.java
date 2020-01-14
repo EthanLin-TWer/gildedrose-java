@@ -74,9 +74,11 @@ public class Item {
             return;
         }
 
-        if (quality > 0 && !isSulfuras()) {
-            quality = quality - 1;
+        if (quality <= 0 || isSulfuras()) {
+            return;
         }
+
+        quality = quality - 1;
     }
 
     protected boolean isSulfuras() {
