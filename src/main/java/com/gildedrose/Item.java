@@ -72,7 +72,7 @@ public class Item {
         return false;
     }
 
-    private boolean isBackstagePass() {
+    protected boolean isBackstagePass() {
         return name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
