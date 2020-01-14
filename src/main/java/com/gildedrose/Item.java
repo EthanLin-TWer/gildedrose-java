@@ -27,7 +27,12 @@ public class Item {
     }
 
     private void updateQualityAfterExpiration() {
-        if (!isAgedBrie()) {
+        if (isAgedBrie()) {
+            if (quality < 50) {
+                quality = quality + 1;
+            }
+            return;
+        } else {
             if (!isBackstagePass()) {
                 if (quality > 0) {
                     if (!isSulfuras()) {
@@ -36,10 +41,6 @@ public class Item {
                 }
             } else {
                 quality = 0;
-            }
-        } else {
-            if (quality < 50) {
-                quality = quality + 1;
             }
         }
     }
