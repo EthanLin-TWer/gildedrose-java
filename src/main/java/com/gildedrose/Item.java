@@ -30,12 +30,6 @@ public class Item {
         decreaseQuality();
     }
 
-    private void decreaseQuality() {
-        if (quality > 0) {
-            quality = quality - 1;
-        }
-    }
-
     private boolean isExpired() {
         return sellIn < 0;
     }
@@ -48,14 +42,20 @@ public class Item {
         decreaseQuality();
     }
 
-    @Override
-    public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
-    }
-
     protected void increaseQuality() {
         if (quality < 50) {
             quality = quality + 1;
         }
+    }
+
+    private void decreaseQuality() {
+        if (quality > 0) {
+            quality = quality - 1;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 }
