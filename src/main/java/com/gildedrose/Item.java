@@ -14,12 +14,7 @@ public class Item {
         this.quality = quality;
     }
 
-    @Override
-    public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
-    }
-
-    void something() {
+    void updateQuality() {
         if (!name.equals("Aged Brie")
                 && !name.equals("Backstage passes to a TAFKAL80ETC concert")) {
             if (quality > 0) {
@@ -68,5 +63,10 @@ public class Item {
                 }
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 }
