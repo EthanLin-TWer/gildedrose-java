@@ -18,7 +18,7 @@ public class Item {
         this.quality = quality;
     }
 
-    void updateQuality() {
+    void passOneDay() {
         if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {
                 if (!isSulfuras()) {
