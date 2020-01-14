@@ -22,6 +22,10 @@ public class Item {
         return new Item("Sulfuras, Hand of Ragnaros", sellIn, quality);
     }
 
+    static Item createBackstagePass(int sellIn, int quality) {
+        return new Item("Backstage passes to a TAFKAL80ETC concert", sellIn, quality);
+    }
+
     void updateQuality() {
         if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {
