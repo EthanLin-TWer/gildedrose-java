@@ -22,7 +22,7 @@ public class Item {
         updateQuality();
         updateSellIn();
 
-        if (sellIn < 0) {
+        if (isExpired()) {
             if (!isAgedBrie()) {
                 if (!isBackstagePass()) {
                     if (quality > 0) {
@@ -39,6 +39,10 @@ public class Item {
                 }
             }
         }
+    }
+
+    private boolean isExpired() {
+        return sellIn < 0;
     }
 
     private void updateSellIn() {
