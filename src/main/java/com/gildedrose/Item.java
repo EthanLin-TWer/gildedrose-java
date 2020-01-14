@@ -18,7 +18,7 @@ public class Item {
         this.quality = quality;
     }
 
-    void passOneDay() {
+    public void passOneDay() {
         updateQuality();
         updateSellIn();
         if (isExpired()) {
@@ -27,6 +27,10 @@ public class Item {
     }
 
     protected void updateQualityAfterExpiration() {
+        decreaseQuality();
+    }
+
+    private void decreaseQuality() {
         if (quality > 0) {
             quality = quality - 1;
         }
@@ -41,9 +45,7 @@ public class Item {
     }
 
     protected void updateQuality() {
-        if (quality > 0) {
-            quality = quality - 1;
-        }
+        decreaseQuality();
     }
 
     @Override
