@@ -68,7 +68,7 @@ public class Item {
         }
     }
 
-    private boolean isSulfuras() {
+    protected boolean isSulfuras() {
         return name.equals("Sulfuras, Hand of Ragnaros");
     }
 
