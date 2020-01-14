@@ -32,17 +32,18 @@ public class Item {
                 quality = quality + 1;
             }
             return;
-        } else {
-            if (!isBackstagePass()) {
-                if (quality > 0) {
-                    if (!isSulfuras()) {
-                        quality = quality - 1;
-                    }
-                }
-            } else {
-                quality = 0;
-            }
         }
+
+        if (!isBackstagePass()) {
+            if (quality > 0) {
+                if (!isSulfuras()) {
+                    quality = quality - 1;
+                }
+            }
+        } else {
+            quality = 0;
+        }
+
     }
 
     private boolean isExpired() {
