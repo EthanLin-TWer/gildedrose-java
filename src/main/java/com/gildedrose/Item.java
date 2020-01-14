@@ -34,14 +34,15 @@ public class Item {
             return;
         }
 
-        if (!isBackstagePass()) {
-            if (quality > 0) {
-                if (!isSulfuras()) {
-                    quality = quality - 1;
-                }
-            }
-        } else {
+        if (isBackstagePass()) {
             quality = 0;
+            return;
+        }
+
+        if (quality > 0) {
+            if (!isSulfuras()) {
+                quality = quality - 1;
+            }
         }
 
     }
