@@ -22,7 +22,7 @@ public class TextTestFixture {
                 new Item("Elixir of the Mongoose", 5, 7), //
                 Item.createSulfuras(0, 80),
                 Item.createSulfuras(-1, 80),
-                new Item("Backstage passes to a TAFKAL80ETC concert", sellIn, quality),
+                createBackstagePass(sellIn, quality),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 1, 20),
@@ -42,6 +42,10 @@ public class TextTestFixture {
         }
 
         return outputStream.toString();
+    }
+
+    private static Item createBackstagePass(int sellIn, int quality) {
+        return new Item("Backstage passes to a TAFKAL80ETC concert", sellIn, quality);
     }
 
 }
