@@ -52,7 +52,7 @@ public class Item {
         sellIn = sellIn - 1;
     }
 
-    private void updateQuality() {
+    protected void updateQuality() {
         if (isAgedBrie() || isBackstagePass()) {
             if (quality < 50) {
                 quality = quality + 1;
