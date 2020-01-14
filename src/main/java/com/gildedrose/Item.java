@@ -39,10 +39,7 @@ public class Item {
             return;
         }
 
-
-        if (isSulfuras()) {
-            return;
-        } else if (quality <= 0) {
+        if (quality <= 0) {
             return;
         }
         quality = quality - 1;
