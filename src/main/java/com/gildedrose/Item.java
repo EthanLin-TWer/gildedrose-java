@@ -26,7 +26,7 @@ public class Item {
         }
     }
 
-    private void updateQualityAfterExpiration() {
+    protected void updateQualityAfterExpiration() {
         if (isAgedBrie()) {
             if (quality < 50) {
                 quality = quality + 1;
