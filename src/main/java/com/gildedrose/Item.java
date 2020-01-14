@@ -46,10 +46,6 @@ public class Item {
         }
     }
 
-    protected boolean isBackstagePass() {
-        return false;
-    }
-
     @Override
     public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;
