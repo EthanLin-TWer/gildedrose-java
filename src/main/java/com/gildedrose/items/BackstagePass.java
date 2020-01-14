@@ -18,9 +18,7 @@ public class BackstagePass extends Item {
             quality = quality + 1;
 
             if (sellIn < 11) {
-                if (quality < 50) {
-                    quality = quality + 1;
-                }
+                increaseQuality();
             }
 
             if (sellIn < 6) {
@@ -29,6 +27,12 @@ public class BackstagePass extends Item {
                 }
             }
 
+        }
+    }
+
+    private void increaseQuality() {
+        if (quality < 50) {
+            quality = quality + 1;
         }
     }
 }
