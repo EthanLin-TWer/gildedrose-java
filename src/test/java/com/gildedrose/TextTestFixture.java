@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.items.AgedBrie;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -16,7 +18,7 @@ public class TextTestFixture {
 
         Item[] items = new Item[] {
                 new Item("+5 Dexterity Vest", 10, 20), //
-                Item.createAgedBrie(2, 0),
+                new AgedBrie(2, 0),
                 new Item("Elixir of the Mongoose", 5, 7), //
                 Item.createSulfuras(0, 80),
                 Item.createSulfuras(-1, 80),

@@ -16,10 +16,6 @@ public class Item {
         this.quality = quality;
     }
 
-    static Item createAgedBrie(int sellIn, int quality) {
-        return new AgedBrie(sellIn, quality);
-    }
-
     static Item createSulfuras(int sellIn, int quality) {
         return new Item("Sulfuras, Hand of Ragnaros", sellIn, quality);
     }
