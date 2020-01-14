@@ -4,6 +4,6 @@ import com.gildedrose.Item;
 
 public class BackstagePass extends Item {
     public BackstagePass(int sellIn, int quality) {
-        super("Sulfuras, Hand of Ragnaros", sellIn, quality);
+        super("Backstage passes to a TAFKAL80ETC concert", sellIn, quality);
     }
 }

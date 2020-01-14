@@ -1,6 +1,7 @@
 package com.gildedrose;
 
 import com.gildedrose.items.AgedBrie;
+import com.gildedrose.items.BackstagePass;
 import com.gildedrose.items.Sulfuras;
 
 public class Item {
@@ -18,7 +19,7 @@ public class Item {
     }
 
     static Item createBackstagePass(int sellIn, int quality) {
-        return new Item("Backstage passes to a TAFKAL80ETC concert", sellIn, quality);
+        return new BackstagePass(sellIn, quality);
     }
 
     void updateQuality() {
