@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.items.AgedBrie;
+
 public class Item {
 
     public String name;
@@ -15,7 +17,7 @@ public class Item {
     }
 
     static Item createAgedBrie(int sellIn, int quality) {
-        return new Item("Aged Brie", sellIn, quality);
+        return new AgedBrie("Aged Brie", sellIn, quality);
     }
 
     static Item createSulfuras(int sellIn, int quality) {
