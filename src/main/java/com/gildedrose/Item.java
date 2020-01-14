@@ -18,6 +18,10 @@ public class Item {
         return new Item("Aged Brie", sellIn, quality);
     }
 
+    static Item createSulfuras(int sellIn, int quality) {
+        return new Item("Sulfuras, Hand of Ragnaros", sellIn, quality);
+    }
+
     void updateQuality() {
         if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {
