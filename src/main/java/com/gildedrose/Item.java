@@ -1,6 +1,7 @@
 package com.gildedrose;
 
 import com.gildedrose.items.AgedBrie;
+import com.gildedrose.items.Sulfuras;
 
 public class Item {
 
@@ -17,7 +18,7 @@ public class Item {
     }
 
     static Item createSulfuras(int sellIn, int quality) {
-        return new Item("Sulfuras, Hand of Ragnaros", sellIn, quality);
+        return new Sulfuras(sellIn, quality);
     }
 
     static Item createBackstagePass(int sellIn, int quality) {
