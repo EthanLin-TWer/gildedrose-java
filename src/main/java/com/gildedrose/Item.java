@@ -15,8 +15,7 @@ public class Item {
     }
 
     void updateQuality() {
-        if (!isAgedBrie()
-                && !name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+        if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {
                 if (!name.equals("Sulfuras, Hand of Ragnaros")) {
                     quality = quality - 1;
@@ -63,6 +62,10 @@ public class Item {
                 }
             }
         }
+    }
+
+    private boolean isBackstagePass() {
+        return name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
     private boolean isAgedBrie() {
