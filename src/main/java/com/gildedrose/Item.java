@@ -47,7 +47,7 @@ public class Item {
 
         if (sellIn < 0) {
             if (!isAgedBrie()) {
-                if (!name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+                if (!isBackstagePass()) {
                     if (quality > 0) {
                         if (!name.equals("Sulfuras, Hand of Ragnaros")) {
                             quality = quality - 1;
