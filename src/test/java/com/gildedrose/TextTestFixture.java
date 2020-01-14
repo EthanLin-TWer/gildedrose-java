@@ -14,15 +14,13 @@ public class TextTestFixture {
 
         printStream.println("OMGHAI!");
 
-        final int sellIn = 15;
-        final int quality = 20;
         Item[] items = new Item[] {
                 new Item("+5 Dexterity Vest", 10, 20), //
                 Item.createAgedBrie(2, 0),
                 new Item("Elixir of the Mongoose", 5, 7), //
                 Item.createSulfuras(0, 80),
                 Item.createSulfuras(-1, 80),
-                Item.createBackstagePass(sellIn, quality),
+                Item.createBackstagePass(15, 20),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 1, 20),
