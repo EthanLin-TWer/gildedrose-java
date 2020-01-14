@@ -22,8 +22,8 @@ public class TextTestFixture {
                 Item.createSulfuras(-1, 80),
                 Item.createBackstagePass(15, 20),
                 Item.createBackstagePass(10, 49),
-                new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
-                new Item("Backstage passes to a TAFKAL80ETC concert", 1, 20),
+                Item.createBackstagePass(5, 49),
+                Item.createBackstagePass(1, 20),
                 // this conjured item does not work properly yet
                 new Item("Conjured Mana Cake", 3, 6) };
 
