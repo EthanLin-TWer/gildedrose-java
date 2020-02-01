@@ -37,7 +37,7 @@ public class GildedRoseTest {
                 System.out.println(item);
             }
             System.out.println();
-            app.update_quality();
+            app.updateQuality();
         }
 
         Approvals.verify(resultStream.toString());
