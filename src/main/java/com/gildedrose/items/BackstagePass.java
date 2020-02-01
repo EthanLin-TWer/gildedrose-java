@@ -29,8 +29,4 @@ public class BackstagePass extends Item {
         }
     }
 
-    @Override
-    protected boolean isBackstagePass() {
-        return true;
-    }
 }

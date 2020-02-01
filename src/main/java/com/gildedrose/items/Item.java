@@ -57,10 +57,6 @@ public class Item {
         return sell_in < 0;
     }
 
-    protected boolean isBackstagePass() {
-        return false;
-    }
-
     protected boolean isAgedBrie() {
         return false;
     }
