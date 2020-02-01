@@ -19,9 +19,8 @@ public class Item {
         return this.name + ", " + this.sell_in + ", " + this.quality;
     }
 
-    void updateQuality() {
-        if (!isAgedBrie()
-                && !isBackstagePass()) {
+    void passOneDay() {
+        if (!isAgedBrie() && !isBackstagePass()) {
             if (quality > 0) {
                 if (!isSulfuras()) {
                     quality = quality - 1;
