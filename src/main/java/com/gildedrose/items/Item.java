@@ -31,9 +31,7 @@ public class Item {
 
     private void decreaseQuality() {
         if (quality > 0) {
-            if (!isSulfuras()) {
-                quality = quality - 1;
-            }
+            quality = quality - 1;
         }
     }
 
