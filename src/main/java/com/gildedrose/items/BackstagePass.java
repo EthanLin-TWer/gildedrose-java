@@ -12,6 +12,11 @@ public class BackstagePass extends Item {
     }
 
     @Override
+    protected void updateQualityAfterExpiration() {
+        quality = 0;
+    }
+
+    @Override
     protected boolean isBackstagePass() {
         return true;
     }
