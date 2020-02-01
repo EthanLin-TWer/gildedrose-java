@@ -41,9 +41,13 @@ public class Item {
                 quality = 0;
             }
         } else {
-            if (quality < 50) {
-                quality = quality + 1;
-            }
+            increaseQuality();
+        }
+    }
+
+    private void increaseQuality() {
+        if (quality < 50) {
+            quality = quality + 1;
         }
     }
 
@@ -66,15 +70,11 @@ public class Item {
 
                 if (isBackstagePass()) {
                     if (sell_in < 11) {
-                        if (quality < 50) {
-                            quality = quality + 1;
-                        }
+                        increaseQuality();
                     }
 
                     if (sell_in < 6) {
-                        if (quality < 50) {
-                            quality = quality + 1;
-                        }
+                        increaseQuality();
                     }
                 }
             }
