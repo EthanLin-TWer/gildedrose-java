@@ -8,9 +8,9 @@ public class Item {
 
     public int quality;
 
-    public Item(String name, int sell_in, int quality) {
+    public Item(String name, int sellIn, int quality) {
         this.name = name;
-        this.sell_in = sell_in;
+        this.sell_in = sellIn;
         this.quality = quality;
     }
 
