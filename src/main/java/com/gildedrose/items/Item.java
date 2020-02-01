@@ -89,7 +89,7 @@ public class Item {
         return name.equals("Sulfuras, Hand of Ragnaros");
     }
 
-    private boolean isBackstagePass() {
+    protected boolean isBackstagePass() {
         return name.equals("Backstage passes to a TAFKAL80ETC concert");
     }
 
