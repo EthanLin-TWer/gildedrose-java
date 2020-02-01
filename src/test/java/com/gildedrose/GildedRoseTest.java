@@ -1,9 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.items.AgedBrie;
-import com.gildedrose.items.BackstagePass;
-import com.gildedrose.items.Item;
-import com.gildedrose.items.Sulfuras;
+import com.gildedrose.items.*;
 import org.approvaltests.Approvals;
 import org.junit.Test;
 
@@ -21,14 +18,14 @@ public class GildedRoseTest {
                 new AgedBrie(2, 0), //
                 new Item("Elixir of the Mongoose", 5, 7), //
                 new Item("Elixir of the Mongoose", 1, 7), //
-                new Sulfuras( 0, 80), //
-                new Sulfuras( -1, 80),
-                new BackstagePass( 15, 20),
-                new BackstagePass( 10, 49),
-                new BackstagePass( 5, 49),
-                new BackstagePass( 1, 20),
+                new Sulfuras(0, 80), //
+                new Sulfuras(-1, 80),
+                new BackstagePass(15, 20),
+                new BackstagePass(10, 49),
+                new BackstagePass(5, 49),
+                new BackstagePass(1, 20),
                 // this conjured item does not work properly yet
-                new Item("Conjured Mana Cake", 3, 6)};
+                new Conjured(3, 6)};
 
         GildedRose app = new GildedRose(items);
         ByteArrayOutputStream resultStream = new ByteArrayOutputStream();
