@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.items;
 
 public class Item {
 
@@ -19,7 +19,7 @@ public class Item {
         return this.name + ", " + this.sell_in + ", " + this.quality;
     }
 
-    void passOneDay() {
+    public void passOneDay() {
         updateQuality();
 
         updateSellIn();
