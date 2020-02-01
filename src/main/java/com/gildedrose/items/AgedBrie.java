@@ -23,8 +23,4 @@ public class AgedBrie extends Item {
         }
     }
 
-    @Override
-    protected boolean isAgedBrie() {
-        return true;
-    }
 }

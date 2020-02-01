@@ -57,7 +57,4 @@ public class Item {
         return sell_in < 0;
     }
 
-    protected boolean isAgedBrie() {
-        return false;
-    }
 }
