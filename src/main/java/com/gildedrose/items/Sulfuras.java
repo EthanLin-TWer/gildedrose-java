@@ -26,8 +26,4 @@ public class Sulfuras extends Item {
 
     }
 
-    @Override
-    protected boolean isSulfuras() {
-        return true;
-    }
 }
