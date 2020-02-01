@@ -16,4 +16,10 @@ public class Conjured extends Item {
         decreaseQuality();
         decreaseQuality();
     }
+
+    @Override
+    protected void updateQualityAfterExpiration() {
+        decreaseQuality();
+        decreaseQuality();
+    }
 }

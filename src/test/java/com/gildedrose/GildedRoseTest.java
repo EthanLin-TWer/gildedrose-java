@@ -25,7 +25,8 @@ public class GildedRoseTest {
                 new BackstagePass(5, 49),
                 new BackstagePass(1, 20),
                 // this conjured item does not work properly yet
-                new Conjured(3, 6)};
+                new Conjured(3, 6),
+                new Conjured(1, 16)};
 
         GildedRose app = new GildedRose(items);
         ByteArrayOutputStream resultStream = new ByteArrayOutputStream();
