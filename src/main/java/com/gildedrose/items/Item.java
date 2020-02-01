@@ -85,7 +85,7 @@ public class Item {
         return sell_in < 0;
     }
 
-    private boolean isSulfuras() {
+    protected boolean isSulfuras() {
         return name.equals("Sulfuras, Hand of Ragnaros");
     }
 
