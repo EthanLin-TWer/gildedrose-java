@@ -23,7 +23,7 @@ public class Item {
         if (!isAgedBrie()
                 && !isBackstagePass()) {
             if (quality > 0) {
-                if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+                if (!isSulfuras()) {
                     quality = quality - 1;
                 }
             }
@@ -47,7 +47,7 @@ public class Item {
             }
         }
 
-        if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+        if (!isSulfuras()) {
             sell_in = sell_in - 1;
         }
 
@@ -55,7 +55,7 @@ public class Item {
             if (!isAgedBrie()) {
                 if (!isBackstagePass()) {
                     if (quality > 0) {
-                        if (!name.equals("Sulfuras, Hand of Ragnaros")) {
+                        if (!isSulfuras()) {
                             quality = quality - 1;
                         }
                     }
@@ -68,6 +68,10 @@ public class Item {
                 }
             }
         }
+    }
+
+    private boolean isSulfuras() {
+        return name.equals("Sulfuras, Hand of Ragnaros");
     }
 
     private boolean isBackstagePass() {
