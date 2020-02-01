@@ -43,10 +43,8 @@ public class Item {
         }
     }
 
-    private void updateSellIn() {
-        if (!isSulfuras()) {
-            sell_in = sell_in - 1;
-        }
+    protected void updateSellIn() {
+        sell_in = sell_in - 1;
     }
 
     protected void updateQualityAfterExpiration() {
