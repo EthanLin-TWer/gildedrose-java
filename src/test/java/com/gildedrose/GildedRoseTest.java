@@ -1,5 +1,6 @@
 package com.gildedrose;
 
+import com.gildedrose.items.AgedBrie;
 import com.gildedrose.items.Item;
 import org.approvaltests.Approvals;
 import org.junit.Test;
@@ -15,7 +16,7 @@ public class GildedRoseTest {
 
         Item[] items = new Item[]{
                 new Item("+5 Dexterity Vest", 10, 20), //
-                new Item("Aged Brie", 2, 0), //
+                new AgedBrie(2, 0), //
                 new Item("Elixir of the Mongoose", 5, 7), //
                 new Item("Elixir of the Mongoose", 1, 7), //
                 new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
