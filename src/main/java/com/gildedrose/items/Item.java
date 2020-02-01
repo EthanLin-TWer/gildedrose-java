@@ -4,19 +4,19 @@ public class Item {
 
     public String name;
 
-    public int sell_in;
+    public int sellIn;
 
     public int quality;
 
     public Item(String name, int sellIn, int quality) {
         this.name = name;
-        this.sell_in = sellIn;
+        this.sellIn = sellIn;
         this.quality = quality;
     }
 
     @Override
     public String toString() {
-        return this.name + ", " + this.sell_in + ", " + this.quality;
+        return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 
     public void passOneDay() {
@@ -42,7 +42,7 @@ public class Item {
     }
 
     protected void updateSellIn() {
-        sell_in = sell_in - 1;
+        sellIn = sellIn - 1;
     }
 
     protected void updateQualityAfterExpiration() {
@@ -54,6 +54,6 @@ public class Item {
     }
 
     private boolean isExpired() {
-        return sell_in < 0;
+        return sellIn < 0;
     }
 }

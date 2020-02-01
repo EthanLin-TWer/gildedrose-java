@@ -19,10 +19,10 @@ public class BackstagePass extends Item {
     @Override
     protected void updateQuality() {
         increaseQuality();
-        if (sell_in < 11) {
+        if (sellIn < 11) {
             increaseQuality();
         }
-        if (sell_in < 6) {
+        if (sellIn < 6) {
             increaseQuality();
         }
     }
