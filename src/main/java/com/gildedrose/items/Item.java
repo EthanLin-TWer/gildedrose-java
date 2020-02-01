@@ -29,15 +29,13 @@ public class Item {
         }
     }
 
-    private void updateQualityAfterExpiration() {
+    protected void updateQualityAfterExpiration() {
         if (!isAgedBrie()) {
             if (!isBackstagePass()) {
                 decreaseQuality();
             } else {
                 quality = 0;
             }
-        } else {
-            increaseQuality();
         }
     }
 
@@ -49,7 +47,7 @@ public class Item {
         }
     }
 
-    private void increaseQuality() {
+    protected void increaseQuality() {
         if (quality < 50) {
             quality = quality + 1;
         }
