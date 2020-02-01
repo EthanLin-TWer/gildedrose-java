@@ -22,9 +22,7 @@ public class Item {
     void passOneDay() {
         updateQuality();
 
-        if (!isSulfuras()) {
-            sell_in = sell_in - 1;
-        }
+        updateSellIn();
 
         if (sell_in < 0) {
             if (!isAgedBrie()) {
@@ -42,6 +40,12 @@ public class Item {
                     quality = quality + 1;
                 }
             }
+        }
+    }
+
+    private void updateSellIn() {
+        if (!isSulfuras()) {
+            sell_in = sell_in - 1;
         }
     }
 
