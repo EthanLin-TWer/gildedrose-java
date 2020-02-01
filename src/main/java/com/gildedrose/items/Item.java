@@ -56,5 +56,4 @@ public class Item {
     private boolean isExpired() {
         return sell_in < 0;
     }
-
 }
